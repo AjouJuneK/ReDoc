@@ -1,0 +1,16 @@
+# git ignore files
+
+# dont care files
+
+
+# data files
+dm_data/*
+content_tokenized/*
+headline_tokenized/*
+finished_files/*
+log/*
+
+# packages
+stanford-corenlp-full-2018-10-05/*
+textrank/*
+pyrouge-0.1.0/*

@@ -50,7 +50,7 @@ def tokenize_data(raw_text_dir, tokenized_text_dir):
     print("Tokenizing %i files in %s and saving in %s..." % (len(texts), raw_text_dir, tokenized_text_dir))
     subprocess.call(command)
     print("Stanford CoreNLP Tokenizer has finished.")
-    # os.remove("mapping.txt")
+    os.remove("mapping.txt")
 
     # Check that the tokenized data directory contains the same number of files as the original directory
     num_original = len(os.listdir(raw_text_dir))

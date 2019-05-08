@@ -6,6 +6,7 @@ import torch.nn as nn
 import numpy as np
 from miscc.config import cfg
 from GlobalAttention import func_attention
+from sklearn.metrics.pairwise import cosine_similarity
 
 
 def consine_similarity(x1, x2, dim=1, eps=1e-8):

@@ -133,7 +133,7 @@ def write_to_bin(data_type, out_files, makevocab=False):
         # for idx,s in enumerate(story_fnames): # fnames-[0, title] is all the name of the files 
         for idx,s in enumerate(list_of_data):
             if idx % 1000 == 0: # story_fnames contains hashed hex digit of the url + .story
-                print("Writing stroy %i of %i; %.2f percent done" % (idx, num_data, float(idx)*100.0/float(num_data)))
+                print("Writing data %i of %i; %.2f percent done" % (idx, num_data, float(idx)*100.0/float(num_data)))
             # Look in the tokenized story dirs to find the .story file corresponding to this url
             if os.path.isfile(os.path.join(content_tokenized_dir, s)): # 만약 content 데이터라면
                 text_file = os.path.join(content_tokenized_dir, s) # text_file 의 경로는 content_tokenized_Serialized

@@ -1,14 +1,24 @@
 # git ignore files
 
 # dont care files
-
+full_tokenize_data.py
+rouge_eval.py
+attn_image_generator/eval/*
 
 # data files
 dm_data/*
 content_tokenized/*
 headline_tokenized/*
 finished_files/*
+orig_finished_files/*
 log/*
+pointer_generator/*.sh
+pointer_generator/code/*.pyc
+pointer_generator/data_util/*pyc
+
+attn_image_generator/data/*
+attn_image_generator/code/*.pyc
+attn_image_generator/code/miscc/*.pyc
 
 # packages
 stanford-corenlp-full-2018-10-05/*

@@ -1,5 +1,3 @@
-# Most of this file is refered from https://github.com/taoxugit/AttnGAN
-
 import torch
 import torch.nn as nn
 import torch.nn.parallel

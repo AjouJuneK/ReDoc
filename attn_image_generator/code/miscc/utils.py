@@ -1,8 +1,7 @@
-# Most of this file is refered from https://github.com/taoxugit/AttnGAN
-
-from torch.nn import init
-
 import os
+import errno
+import numpy as np
+from torch.nn import init
 
 import torch
 import torch.nn as nn
@@ -32,7 +31,9 @@ def drawCaption(convas, captions, ixtoword, vis_size, off1=2, off2=2):
     num = captions.size(0)
     img_txt = Image.fromarray(convas)
     # get a font
-    fnt = ImageFont.truetype('Pillow/Tests/fonts/FreeMono.ttf', 50)
+    fnt = None  # ImageFont.truetype('Pillow/Tests/fonts/FreeMono.ttf', 50)
+    fnt = ImageFont.load_default()
+    # fnt = ImageFont.truetype('Pillow/Tests/fonts/FreeMono.ttf', 50)
     # get a drawing context
     d = ImageDraw.Draw(img_txt)
     sentence_list = []

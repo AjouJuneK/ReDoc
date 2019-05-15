@@ -1,9 +1,10 @@
 CONFIG_NAME: 'attn2'
 
-DATASET_NAME: 'football'
-DATA_DIR: '../data/football'
+DATASET_NAME: 'football_content'
+DATA_DIR: '../data/football_content'
 GPU_ID: 0
 WORKERS: 4
+
 
 TREE:
     BRANCH_NUM: 3
@@ -11,19 +12,19 @@ TREE:
 
 TRAIN:
     FLAG: True
-    NET_G: '' # '../models/football_AttnGAN2.pth'
+    NET_G: ''  # '../models/bird_AttnGAN2.pth'
     B_NET_D: True
-    BATCH_SIZE: 20
+    BATCH_SIZE: 20  # 22
     MAX_EPOCH: 600
     SNAPSHOT_INTERVAL: 5
     DISCRIMINATOR_LR: 0.002
     GENERATOR_LR: 0.002
-    NET_E: '../DAMSMencoders/football/text_encoder100.pth'
-    # NET_E: '../DAMSMencoders/football/text_encoder70.pth'
+    #
+    NET_E: '../DAMSMencoders/football_content/text_encoder100.pth'
     SMOOTH:
-        GAMMA1: 4.0
+        GAMMA1: 4.0  # 1,2,5 good 4 best  10&100bad
         GAMMA2: 5.0
-        GAMMA3: 10.0
+        GAMMA3: 10.0  # 10good 1&100bad
         LAMBDA: 5.0
 
 GAN:

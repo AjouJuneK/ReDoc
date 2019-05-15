@@ -1,5 +1,3 @@
-# Most of this file is refered from https://github.com/taoxugit/AttnGAN
-
 from __future__ import print_function
 
 from miscc.utils import mkdir_p

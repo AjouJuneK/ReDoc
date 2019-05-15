@@ -1,5 +1,3 @@
-# Most of this file is refered from https://github.com/taoxugit/AttnGAN
-
 from __future__ import division
 from __future__ import print_function
 
@@ -11,7 +9,7 @@ from easydict import EasyDict as edict
 __C = edict()
 cfg = __C
 
-# Dataset name: flowers, birds, football articles
+# Dataset name: flowers, birds
 __C.DATASET_NAME = 'birds'
 __C.CONFIG_NAME = ''
 __C.DATA_DIR = ''
@@ -19,7 +17,7 @@ __C.GPU_ID = 0
 __C.CUDA = True
 __C.WORKERS = 6
 
-__C.RNN_TYPE = 'LSTM'   # or 'GRU' when data is not enough
+__C.RNN_TYPE = 'LSTM'   # 'GRU'
 __C.B_VALIDATION = False
 
 __C.TREE = edict()

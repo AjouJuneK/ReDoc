@@ -1,5 +1,3 @@
-# Most of this file is refered from https://github.com/taoxugit/AttnGAN
-
 """
 Global attention takes a matrix and a query metrix.
 Based on each query vector q, it computes a parameterized convex combination of the matrix

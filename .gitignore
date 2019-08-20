@@ -19,6 +19,9 @@ pointer_generator/data_util/*pyc
 attn_image_generator/data/*
 attn_image_generator/code/*.pyc
 attn_image_generator/code/miscc/*.pyc
+attn_image_generator/output/*
+attn_image_generator/DAMSMencoders/*
+attn_image_generator/models/*
 
 # packages
 stanford-corenlp-full-2018-10-05/*
